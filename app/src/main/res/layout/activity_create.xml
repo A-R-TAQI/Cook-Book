@@ -1,0 +1,221 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    >
+
+    <ImageView
+        android:id="@+id/photoImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hel" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/photoImageView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="478dp"
+        android:layout_marginEnd="106dp"
+        android:id="@+id/selectImageBtn"
+        android:text="Upload Image" />
+
+    <EditText
+        android:id="@+id/titleTextView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:hint="Recipe Name"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="16dp"
+        android:layout_below="@id/photoImageView" />
+
+    <EditText
+        android:id="@+id/Cuisine1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/titleTextView1"
+        android:hint="Cuisine Name"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/Diet1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/Cuisine1"
+        android:hint="Diet"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Diet1"
+        android:columnCount="10"
+        android:rowCount="2"
+        android:orientation="horizontal"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp"
+        android:paddingBottom="0dp">
+
+        <ImageView
+            android:id="@+id/gridImageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnWeight="0"
+
+            android:src="@drawable/icons8_clock_30" />
+
+        <TextView
+            android:id="@+id/gridTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:text="Preps in:" />
+
+        <TextView
+            android:id="@+id/gridTextViewSpace4"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:layout_columnSpan="1" />
+
+        <EditText
+            android:id="@+id/prepsin1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:textSize="16sp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        <TextView
+            android:id="@+id/gridTextViewSpace6"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:layout_columnSpan="1" />
+
+        <TextView
+            android:id="@+id/gridTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_row="0"
+            android:text="Cook in:" />
+
+        <TextView
+            android:id="@+id/gridTextViewSpace"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_column="4"
+            android:layout_row="0"
+            android:layout_columnSpan="1" />
+
+        <EditText
+            android:id="@+id/cooksin1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:textSize="16sp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        <TextView
+            android:id="@+id/gridTextViewSpace7"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_column="4"
+            android:layout_row="1"
+            android:layout_columnSpan="1" />
+
+        <TextView
+            android:id="@+id/gridTextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="5"
+            android:layout_row="0"
+            android:text="Total in:" />
+        <TextView
+            android:id="@+id/gridTextViewSpace5"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_column="6"
+            android:layout_row="0"
+            android:layout_columnSpan="1" />
+
+        <EditText
+            android:id="@+id/totalin1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_row="1"
+            android:layout_column="5"
+            android:textSize="16sp"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        <TextView
+            android:id="@+id/gridTextViewSpace51"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_column="6"
+            android:layout_row="1"
+            android:layout_columnSpan="1" />
+
+        <ImageView
+            android:id="@+id/gridImageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="7"
+            android:src="@drawable/icons8_spoon_30" />
+
+        <TextView
+            android:id="@+id/gridTextView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="8"
+            android:text="Makes:" />
+
+        <EditText
+            android:id="@+id/makesin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_row="1"
+            android:layout_column="8"
+            android:textSize="16sp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    </GridLayout>
+
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="129dp"
+        android:layout_marginBottom="91dp"
+        android:text="Save" />
+
+
+</RelativeLayout>

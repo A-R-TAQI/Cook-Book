@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+        android:icon="@drawable/home_icon"
+        android:id="@+id/home"/>
+
+    <item android:title="Search"
+        android:icon="@drawable/search_icon"
+        android:id="@+id/search"
+        />
+    <item android:title="User Profile"
+        android:icon="@drawable/user_icon"
+        android:id="@+id/profile"/>
+    <item android:title="Meal Planner"
+        android:icon="@drawable/meal_icon"
+        android:id="@+id/planner"/>
+</menu>

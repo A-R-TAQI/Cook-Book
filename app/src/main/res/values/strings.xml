@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CookBook</string>
+    <string name="todo">yo\n</string>
+    <string name="recipeName">Recipe Name</string>
+    <string name="ingredients">Ingredients\n</string>
+    <string name="default_web_client_id">AIzaSyC5WaI8CAgE0G0Dc5TPew-O5sbRgmYlPsQ</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
