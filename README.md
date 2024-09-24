@@ -23,7 +23,7 @@ Follow these steps to get a development environment running:
 1. **Clone the Repository**:  
    Open your terminal and run:
    ```bash
-   git clone https://github.com/yourusername/your-repo.git
+   git clone [https://github.com/A-R-TAQI/Cook-Book.git]
 
 
 1. **Open the Project in Android Studio**:  
